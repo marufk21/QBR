@@ -45,8 +45,9 @@ const Dashboard = () => {
         </select>
       </div>
 
-      <div className="w-full max-w-2xl mx-auto my-4">
-        <PerformanceGraph data={performanceData} className="w-full h-64 md:h-80 lg:h-96" />
+      {/* Adjusted graph container for larger dimensions */}
+      <div className="w-full max-w-4xl mx-auto my-4"> {/* Increased max width */}
+        <PerformanceGraph data={performanceData} className="w-full h-80 md:h-96 lg:h-[500px]" /> {/* Adjusted height */}
       </div>
 
     </div>
