@@ -2,7 +2,6 @@ import React from "react";
 import { Bar } from "react-chartjs-2";
 import { Chart, CategoryScale, LinearScale, BarElement, Title } from 'chart.js';
 
-// Register the necessary components
 Chart.register(CategoryScale, LinearScale, BarElement, Title);
 
 const PerformanceGraph = ({ data }) => {
@@ -11,15 +10,15 @@ const PerformanceGraph = ({ data }) => {
     datasets: [
       {
         label: "Performance",
-        data: data, // Ensure this is an array of numbers
-        backgroundColor: "rgba(75,192,192,0.4)",
-        borderColor: "rgba(75,192,192,1)",
+        data: data,
+        backgroundColor: "rgba(54,162,235,0.4)", // Light blue
+        borderColor: "rgba(54,162,235,1)",       // Solid blue
         borderWidth: 1,
       },
     ],
   };
 
-  console.log("Chart Data:", chartData); 
+  console.log("Chart Data:", chartData);
 
   const options = {
     responsive: true,

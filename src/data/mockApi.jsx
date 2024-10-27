@@ -4,7 +4,7 @@ export  const employees = [
         "employeeName": "Alice Smith",
         "data": {
             "Present Goals": {
-                "January": 80,
+                "January": "80",
                 "February": 70,
                 "March": 90,
                 "April": 85,
