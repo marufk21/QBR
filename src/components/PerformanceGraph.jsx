@@ -11,9 +11,9 @@ const PerformanceGraph = ({ data }) => {
       {
         label: "Performance",
         data: data,
-        backgroundColor: "rgba(54,162,235,0.4)", // Light blue
-        borderColor: "rgba(54,162,235,1)",       // Solid blue
-        borderWidth: 1,
+        backgroundColor: "rgba(255, 182, 193, 0.5)", 
+        borderColor: "rgba(255, 99, 71, 0.8)",       
+        borderWidth: 4,
       },
     ],
   };
@@ -34,7 +34,7 @@ const PerformanceGraph = ({ data }) => {
   };
 
   return (
-    <div style={{ height: "400px", width: "100%" }}>
+    <div style={{ height: "300%", width: "100%" }}>
       <Bar data={chartData} options={options} />
     </div>
   );
