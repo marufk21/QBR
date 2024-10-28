@@ -44,43 +44,42 @@ const Dashboard = () => {
         </select>
       </div>
 
-
       {/* Display Task Content */}
       <div className="w-full max-w-4xl mx-auto my-4">
-
-        {/* Graph Visualisation Data  */}
+      
+        {/* Graph Visualisation Data */}
         {["Attendence", "Performance Graph"].includes(selectedTask) && (
           <PerformanceGraph data={performanceData} className="w-full h-80 md:h-96 lg:h-[500px]" />
         )}
 
-        {/* Paragraph Visualisation Data" */}
+        {/* Paragraph Visualisation Data */}
         {performanceData?.title && (
-          <h2 className="text-3xl md:text-4xl font-extrabold text-gray-800 mb-6 text-center leading-snug transition-all duration-300 hover:text-coral">
+          <h2 className="text-3xl md:text-3xl font-semibold text-black mb-4 text-center leading-snug transition-all duration-300 hover:text-coral">
             {performanceData.title}
           </h2>
         )}
 
         {performanceData?.content && (
-          <p className="text-gray-600 text-lg md:text-xl leading-relaxed mb-8 text-center">
+          <p className="text-black text-lg md:text-xl leading-relaxed mb-8 text-justify md:text-center tracking-wide bg-dark-coral rounded-lg shadow-md p-6 border-2 border-soft-coral hover:bg-coral transition-colors duration-300">
             {performanceData.content}
           </p>
         )}
 
         {performanceData?.tasks && (
-          <div className="bg-gray-100 rounded-lg p-6 mt-8 shadow-lg hover:bg-gray-200 transition-colors duration-300">
-            <h3 className="text-2xl font-semibold text-gray-700 mb-6 text-center">
+          <div className="bg-dark-coral rounded-lg p-6 mt-8 shadow-lg transition-colors duration-300 border-2 border-soft-coral">
+            <h3 className="text-2xl font-semibold text-black mb-6 text-left">
               Task List
             </h3>
-            <ul className="list-disc list-inside space-y-3 text-gray-800 text-lg leading-relaxed">
+            <ul className="list-disc list-inside space-y-3 text-black text-lg leading-relaxed">
               {performanceData.tasks.map((task, index) => (
                 <li key={index} className="pl-1 transform transition-transform duration-200 hover:translate-x-2">
                   {task}
                 </li>
               ))}
             </ul>
-
           </div>
         )}
+
       </div>
     </div>
   );
