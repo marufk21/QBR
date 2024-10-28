@@ -3,7 +3,7 @@ export const employees = [
         "employeeId": 'E001',
         "employeeName": "Alice Smith",
         "data": {
-            "Attendance": {
+            "Attendence": {
                 "January": 95,
                 "February": 90,
                 "March": 93,
@@ -69,7 +69,7 @@ export const employees = [
         "employeeId": 'E002',
         "employeeName": "John Doe",
         "data": {
-            "Attendance": {
+            "Attendence": {
                 "January": 95,
                 "February": 90,
                 "March": 93,
@@ -137,7 +137,7 @@ export const employees = [
         "employeeId": 'E003',
         "employeeName": "Sofia Martinez",
         "data": {
-            "Attendance": {
+            "Attendence": {
                 "January": 95,
                 "February": 90,
                 "March": 93,
@@ -205,21 +205,7 @@ export const employees = [
         "employeeId": 'E004',
         "employeeName": "Michael Chen",
         "data": {
-            "Graph Performance": {
-                "January": 88,
-                "February": 82,
-                "March": 91,
-                "April": 86,
-                "May": 79,
-                "June": 92,
-                "July": 95,
-                "August": 90,
-                "September": 84,
-                "October": 89,
-                "November": 87,
-                "December": 93
-            },
-            "Attendance": {
+            "Attendence": {
                 "January": 95,
                 "February": 90,
                 "March": 93,
@@ -233,6 +219,21 @@ export const employees = [
                 "November": 88,
                 "December": 94
             },
+            "Performance Graph": {
+                "January": 88,
+                "February": 82,
+                "March": 91,
+                "April": 86,
+                "May": 79,
+                "June": 92,
+                "July": 95,
+                "August": 90,
+                "September": 84,
+                "October": 89,
+                "November": 87,
+                "December": 93
+            },
+
             "Present Goals": {
                 title: "Progress on Present Goals",
                 content: "In the past quarter, the team has made significant strides toward our key objectives. We completed over 80% of the targeted tasks, including enhancing the user experience on the client portal, increasing system efficiency by 20%, and integrating a new customer feedback tool. However, some areas, such as cross-functional training sessions, remain in progress due to resource constraints."

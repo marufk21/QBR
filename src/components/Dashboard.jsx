@@ -6,7 +6,7 @@ import PerformanceGraph from "./PerformanceGraph";
 const Dashboard = () => {
   const { id } = useParams();
   const [employee, setEmployee] = useState(null);
-  const [selectedTask, setSelectedTask] = useState("Present Goals");
+  const [selectedTask, setSelectedTask] = useState("Attendence");
 
   useEffect(() => {
     const employeeData = fetchEmployee(id);
@@ -47,28 +47,40 @@ const Dashboard = () => {
 
       {/* Display Task Content */}
       <div className="w-full max-w-4xl mx-auto my-4">
-        {performanceData && performanceData.title && (
-          <h2 className="text-xl font-semibold text-gray-800 mb-2">{performanceData.title}</h2>
-        )}
-        {performanceData && performanceData.content && (
-          <p className="text-gray-700 mb-4">{performanceData.content}</p>
-        )}
-        {performanceData && performanceData.tasks && (
-          <ul className="list-disc list-inside text-gray-700">
-            {performanceData.tasks.map((task, index) => (
-              <li key={index}>{task}</li>
-            ))}
-          </ul>
-        )}
 
-        
-
-        {/* Display Graph for "Graph Performance" and "Attendance" */}
-        {[ "Attendance", "Performance Graph"].includes(selectedTask) && (
+        {/* Graph Visualisation Data  */}
+        {["Attendence", "Performance Graph"].includes(selectedTask) && (
           <PerformanceGraph data={performanceData} className="w-full h-80 md:h-96 lg:h-[500px]" />
         )}
 
+        {/* Paragraph Visualisation Data" */}
+        {performanceData?.title && (
+          <h2 className="text-3xl md:text-4xl font-extrabold text-gray-800 mb-6 text-center leading-snug transition-all duration-300 hover:text-coral">
+            {performanceData.title}
+          </h2>
+        )}
 
+        {performanceData?.content && (
+          <p className="text-gray-600 text-lg md:text-xl leading-relaxed mb-8 text-center">
+            {performanceData.content}
+          </p>
+        )}
+
+        {performanceData?.tasks && (
+          <div className="bg-gray-100 rounded-lg p-6 mt-8 shadow-lg hover:bg-gray-200 transition-colors duration-300">
+            <h3 className="text-2xl font-semibold text-gray-700 mb-6 text-center">
+              Task List
+            </h3>
+            <ul className="list-disc list-inside space-y-3 text-gray-800 text-lg leading-relaxed">
+              {performanceData.tasks.map((task, index) => (
+                <li key={index} className="pl-1 transform transition-transform duration-200 hover:translate-x-2">
+                  {task}
+                </li>
+              ))}
+            </ul>
+
+          </div>
+        )}
       </div>
     </div>
   );
