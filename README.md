@@ -55,7 +55,7 @@ This is a React-based dashboard application for tracking employee performance da
 ```bash
 src/
 ├── components/
-│   ├── Dashboard.js           # Employee Dashboard with data display
+│   ├── Dashboard.js            # Employee Dashboard with data display
 │   ├── PerformanceGraph.js     # Chart.js-based performance graph component
 │   ├── MonthlyDataEntry.js     # Form to enter monthly progress data
 │   ├── ...
