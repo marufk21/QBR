@@ -3,63 +3,20 @@ export const employees = [
         "employeeId": 'E001',
         "employeeName": "Alice Smith",
         "data": {
-            "Present Goals": {
-                "January": 92,
-                "February": 85,
-                "March": 95,
+            "Attendance": {
+                "January": 95,
+                "February": 90,
+                "March": 93,
                 "April": 88,
-                "May": 79,
-                "June": 93,
+                "May": 87,
+                "June": 91,
                 "July": 96,
-                "August": 90,
-                "September": 87,
-                "October": 91,
+                "August": 89,
+                "September": 85,
+                "October": 90,
                 "November": 88,
                 "December": 94
-            },
-            "Future Goals": {
-                "January": 89,
-                "February": 82,
-                "March": 92,
-                "April": 85,
-                "May": 78,
-                "June": 91,
-                "July": 93,
-                "August": 87,
-                "September": 84,
-                "October": 90,
-                "November": 86,
-                "December": 95
-            },
-            "Tasks Cleared": {
-                "January": 88,
-                "February": 84,
-                "March": 90,
-                "April": 87,
-                "May": 79,
-                "June": 92,
-                "July": 95,
-                "August": 89,
-                "September": 86,
-                "October": 90,
-                "November": 87,
-                "December": 91
-            },
-            "Changes in Plans": {
-                "January": 90,
-                "February": 83,
-                "March": 91,
-                "April": 89,
-                "May": 81,
-                "June": 88,
-                "July": 94,
-                "August": 85,
-                "September": 87,
-                "October": 92,
-                "November": 86,
-                "December": 89
-            },
-            "Graph Performance": {
+            }, "Performance Graph": {
                 "January": 88,
                 "February": 82,
                 "March": 91,
@@ -73,19 +30,194 @@ export const employees = [
                 "November": 87,
                 "December": 93
             },
+            "Present Goals": {
+                title: "Progress on Present Goals",
+                content: "In the past quarter, the team has made significant strides toward our key objectives. We completed over 80% of the targeted tasks, including enhancing the user experience on the client portal, increasing system efficiency by 20%, and integrating a new customer feedback tool. However, some areas, such as cross-functional training sessions, remain in progress due to resource constraints."
+            },
+            "Future Goals": {
+                title: "Future Goals (Tasks List)",
+                content: "The upcoming quarter will focus on refining our core functionalities and introducing new features. Key tasks include:",
+                tasks: [
+                    "Implementing AI-driven recommendations in the app to enhance user engagement.",
+                    "Conducting a comprehensive security audit to identify and mitigate risks.",
+                    "Launching a beta version of the mobile app by the end of the quarter.",
+                    "Initiating a customer feedback program to improve service offerings."]
+            },
+            "Tasks Cleared": {
+                title: "Task Cleared",
+                content: "Successfully completed tasks this quarter:",
+                tasks: [
+                    "Redesigned the website layout to improve user navigation.",
+                    "Reduced page load time by 30% through optimization.",
+                    "Launched the customer feedback tool for the initial set of users.",
+                    "Completed system maintenance and security updates."
+                ]
+            },
+            "Changes in Plans": {
+                title: "Change in Plans",
+                content: "Midway through the quarter, we pivoted our strategy to better align with current market demands. The mobile app’s initial release was postponed in favor of improving web app performance. Additionally, we prioritized data analytics features to offer more insights to our clients, given their growing need for actionable data."
+            },
+
             "Team Performance": {
-                "January": 86,
-                "February": 80,
-                "March": 90,
+                title: "Team Performance",
+                content: "The team demonstrated outstanding collaboration, especially in handling complex technical issues. Despite some unexpected challenges, such as resource allocation issues, the team’s adaptability and commitment to delivering quality work contributed to our success this quarter. Continuous learning and knowledge-sharing sessions helped boost morale and skills across the team."
+            },
+
+        }
+    },
+    {
+        "employeeId": 'E002',
+        "employeeName": "John Doe",
+        "data": {
+            "Attendance": {
+                "January": 95,
+                "February": 90,
+                "March": 93,
                 "April": 88,
-                "May": 77,
+                "May": 87,
                 "June": 91,
-                "July": 94,
+                "July": 96,
                 "August": 89,
-                "September": 82,
-                "October": 86,
-                "November": 85,
-                "December": 92
+                "September": 85,
+                "October": 90,
+                "November": 88,
+                "December": 94
+            },
+            "Performance Graph": {
+                "January": 88,
+                "February": 82,
+                "March": 91,
+                "April": 86,
+                "May": 79,
+                "June": 92,
+                "July": 95,
+                "August": 90,
+                "September": 84,
+                "October": 89,
+                "November": 87,
+                "December": 93
+            },
+
+            "Present Goals": {
+                title: "Progress on Present Goals",
+                content: "In the past quarter, the team has made significant strides toward our key objectives. We completed over 80% of the targeted tasks, including enhancing the user experience on the client portal, increasing system efficiency by 20%, and integrating a new customer feedback tool. However, some areas, such as cross-functional training sessions, remain in progress due to resource constraints."
+            },
+            "Future Goals": {
+                title: "Future Goals (Tasks List)",
+                content: "The upcoming quarter will focus on refining our core functionalities and introducing new features. Key tasks include:",
+                tasks: [
+                    "Implementing AI-driven recommendations in the app to enhance user engagement.",
+                    "Conducting a comprehensive security audit to identify and mitigate risks.",
+                    "Launching a beta version of the mobile app by the end of the quarter.",
+                    "Initiating a customer feedback program to improve service offerings."]
+            },
+            "Tasks Cleared": {
+                title: "Task Cleared",
+                content: "Successfully completed tasks this quarter:",
+                tasks: [
+                    "Redesigned the website layout to improve user navigation.",
+                    "Reduced page load time by 30% through optimization.",
+                    "Launched the customer feedback tool for the initial set of users.",
+                    "Completed system maintenance and security updates."
+                ]
+            },
+            "Changes in Plans": {
+                title: "Change in Plans",
+                content: "Midway through the quarter, we pivoted our strategy to better align with current market demands. The mobile app’s initial release was postponed in favor of improving web app performance. Additionally, we prioritized data analytics features to offer more insights to our clients, given their growing need for actionable data."
+            },
+
+            "Team Performance": {
+                title: "Team Performance",
+                content: "The team demonstrated outstanding collaboration, especially in handling complex technical issues. Despite some unexpected challenges, such as resource allocation issues, the team’s adaptability and commitment to delivering quality work contributed to our success this quarter. Continuous learning and knowledge-sharing sessions helped boost morale and skills across the team."
+            },
+
+        }
+    },
+    {
+        "employeeId": 'E003',
+        "employeeName": "Sofia Martinez",
+        "data": {
+            "Attendance": {
+                "January": 95,
+                "February": 90,
+                "March": 93,
+                "April": 88,
+                "May": 87,
+                "June": 91,
+                "July": 96,
+                "August": 89,
+                "September": 85,
+                "October": 90,
+                "November": 88,
+                "December": 94
+            },
+            "Performance Graph": {
+                "January": 88,
+                "February": 82,
+                "March": 91,
+                "April": 86,
+                "May": 79,
+                "June": 92,
+                "July": 95,
+                "August": 90,
+                "September": 84,
+                "October": 89,
+                "November": 87,
+                "December": 93
+            },
+
+            "Present Goals": {
+                title: "Progress on Present Goals",
+                content: "In the past quarter, the team has made significant strides toward our key objectives. We completed over 80% of the targeted tasks, including enhancing the user experience on the client portal, increasing system efficiency by 20%, and integrating a new customer feedback tool. However, some areas, such as cross-functional training sessions, remain in progress due to resource constraints."
+            },
+            "Future Goals": {
+                title: "Future Goals (Tasks List)",
+                content: "The upcoming quarter will focus on refining our core functionalities and introducing new features. Key tasks include:",
+                tasks: [
+                    "Implementing AI-driven recommendations in the app to enhance user engagement.",
+                    "Conducting a comprehensive security audit to identify and mitigate risks.",
+                    "Launching a beta version of the mobile app by the end of the quarter.",
+                    "Initiating a customer feedback program to improve service offerings."]
+            },
+            "Tasks Cleared": {
+                title: "Task Cleared",
+                content: "Successfully completed tasks this quarter:",
+                tasks: [
+                    "Redesigned the website layout to improve user navigation.",
+                    "Reduced page load time by 30% through optimization.",
+                    "Launched the customer feedback tool for the initial set of users.",
+                    "Completed system maintenance and security updates."
+                ]
+            },
+            "Changes in Plans": {
+                title: "Change in Plans",
+                content: "Midway through the quarter, we pivoted our strategy to better align with current market demands. The mobile app’s initial release was postponed in favor of improving web app performance. Additionally, we prioritized data analytics features to offer more insights to our clients, given their growing need for actionable data."
+            },
+
+            "Team Performance": {
+                title: "Team Performance",
+                content: "The team demonstrated outstanding collaboration, especially in handling complex technical issues. Despite some unexpected challenges, such as resource allocation issues, the team’s adaptability and commitment to delivering quality work contributed to our success this quarter. Continuous learning and knowledge-sharing sessions helped boost morale and skills across the team."
+            },
+
+        }
+    },
+    {
+        "employeeId": 'E004',
+        "employeeName": "Michael Chen",
+        "data": {
+            "Graph Performance": {
+                "January": 88,
+                "February": 82,
+                "March": 91,
+                "April": 86,
+                "May": 79,
+                "June": 92,
+                "July": 95,
+                "August": 90,
+                "September": 84,
+                "October": 89,
+                "November": 87,
+                "December": 93
             },
             "Attendance": {
                 "January": 95,
@@ -100,218 +232,45 @@ export const employees = [
                 "October": 90,
                 "November": 88,
                 "December": 94
-            }
-        }
-    },
-    {
-        "employeeId": 'E002',
-        "employeeName": "John Doe",
-        "data": {
+            },
             "Present Goals": {
-                "January": 85,
-                "February": 78,
-                "March": 89,
-                "April": 84,
-                "May": 75,
-                "June": 87,
-                "July": 90,
-                "August": 83,
-                "September": 80,
-                "October": 88,
-                "November": 82,
-                "December": 90
+                title: "Progress on Present Goals",
+                content: "In the past quarter, the team has made significant strides toward our key objectives. We completed over 80% of the targeted tasks, including enhancing the user experience on the client portal, increasing system efficiency by 20%, and integrating a new customer feedback tool. However, some areas, such as cross-functional training sessions, remain in progress due to resource constraints."
             },
             "Future Goals": {
-                "January": 83,
-                "February": 75,
-                "March": 88,
-                "April": 80,
-                "May": 73,
-                "June": 85,
-                "July": 89,
-                "August": 82,
-                "September": 78,
-                "October": 86,
-                "November": 79,
-                "December": 88
+                title: "Future Goals (Tasks List)",
+                content: "The upcoming quarter will focus on refining our core functionalities and introducing new features. Key tasks include:",
+                tasks: [
+                    "Implementing AI-driven recommendations in the app to enhance user engagement.",
+                    "Conducting a comprehensive security audit to identify and mitigate risks.",
+                    "Launching a beta version of the mobile app by the end of the quarter.",
+                    "Initiating a customer feedback program to improve service offerings."]
             },
             "Tasks Cleared": {
-                "January": 82,
-                "February": 77,
-                "March": 87,
-                "April": 81,
-                "May": 76,
-                "June": 85,
-                "July": 89,
-                "August": 81,
-                "September": 80,
-                "October": 83,
-                "November": 78,
-                "December": 89
+                title: "Task Cleared",
+                content: "Successfully completed tasks this quarter:",
+                tasks: [
+                    "Redesigned the website layout to improve user navigation.",
+                    "Reduced page load time by 30% through optimization.",
+                    "Launched the customer feedback tool for the initial set of users.",
+                    "Completed system maintenance and security updates."
+                ]
             },
             "Changes in Plans": {
-                "January": 80,
-                "February": 76,
-                "March": 84,
-                "April": 82,
-                "May": 74,
-                "June": 83,
-                "July": 87,
-                "August": 80,
-                "September": 78,
-                "October": 85,
-                "November": 77,
-                "December": 88
+                title: "Change in Plans",
+                content: "Midway through the quarter, we pivoted our strategy to better align with current market demands. The mobile app’s initial release was postponed in favor of improving web app performance. Additionally, we prioritized data analytics features to offer more insights to our clients, given their growing need for actionable data."
             },
-            "Graph Performance": {
-                "January": 83,
-                "February": 78,
-                "March": 86,
-                "April": 82,
-                "May": 74,
-                "June": 85,
-                "July": 89,
-                "August": 83,
-                "September": 80,
-                "October": 84,
-                "November": 79,
-                "December": 87
-            },
+
             "Team Performance": {
-                "January": 84,
-                "February": 79,
-                "March": 88,
-                "April": 83,
-                "May": 75,
-                "June": 86,
-                "July": 90,
-                "August": 85,
-                "September": 81,
-                "October": 85,
-                "November": 80,
-                "December": 89
+                title: "Team Performance",
+                content: "The team demonstrated outstanding collaboration, especially in handling complex technical issues. Despite some unexpected challenges, such as resource allocation issues, the team’s adaptability and commitment to delivering quality work contributed to our success this quarter. Continuous learning and knowledge-sharing sessions helped boost morale and skills across the team."
             },
-            "Attendance": {
-                "January": 90,
-                "February": 85,
-                "March": 88,
-                "April": 84,
-                "May": 82,
-                "June": 86,
-                "July": 91,
-                "August": 86,
-                "September": 84,
-                "October": 89,
-                "November": 83,
-                "December": 92
-            }
+
         }
     },
-    {
-        "employeeId": 'E003',
-        "employeeName": "Emma Watson",
-        "data": {
-            "Present Goals": {
-                "January": 89,
-                "February": 82,
-                "March": 90,
-                "April": 86,
-                "May": 78,
-                "June": 85,
-                "July": 92,
-                "August": 87,
-                "September": 80,
-                "October": 88,
-                "November": 84,
-                "December": 93
-            },
-            "Future Goals": {
-                "January": 87,
-                "February": 81,
-                "March": 88,
-                "April": 83,
-                "May": 76,
-                "June": 83,
-                "July": 91,
-                "August": 85,
-                "September": 79,
-                "October": 85,
-                "November": 82,
-                "December": 91
-            },
-            "Tasks Cleared": {
-                "January": 88,
-                "February": 84,
-                "March": 90,
-                "April": 85,
-                "May": 77,
-                "June": 86,
-                "July": 92,
-                "August": 89,
-                "September": 83,
-                "October": 87,
-                "November": 82,
-                "December": 94
-            },
-            "Changes in Plans": {
-                "January": 85,
-                "February": 80,
-                "March": 87,
-                "April": 82,
-                "May": 73,
-                "June": 84,
-                "July": 91,
-                "August": 86,
-                "September": 81,
-                "October": 86,
-                "November": 78,
-                "December": 90
-            },
-            "Graph Performance": {
-                "January": 86,
-                "February": 82,
-                "March": 89,
-                "April": 84,
-                "May": 75,
-                "June": 88,
-                "July": 92,
-                "August": 87,
-                "September": 80,
-                "October": 89,
-                "November": 84,
-                "December": 90
-            },
-            "Team Performance": {
-                "January": 89,
-                "February": 85,
-                "March": 90,
-                "April": 88,
-                "May": 80,
-                "June": 89,
-                "July": 94,
-                "August": 91,
-                "September": 83,
-                "October": 87,
-                "November": 86,
-                "December": 92
-            },
-            "Attendance": {
-                "January": 93,
-                "February": 87,
-                "March": 90,
-                "April": 88,
-                "May": 85,
-                "June": 89,
-                "July": 95,
-                "August": 92,
-                "September": 88,
-                "October": 91,
-                "November": 86,
 
-            }
-        }
-    }]
+]
 
-    export const fetchEmployee = (id) => {
-        return employees.find(emp => emp.employeeId === id) || null;
-    };
+export const fetchEmployee = (id) => {
+    return employees.find(emp => emp.employeeId === id) || null;
+};
